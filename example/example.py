@@ -22,7 +22,7 @@ class PageOne(tknav.Page):
 
         tk.Button(
             self,
-            text='Navigation to Page Two',
+            text='Navigate to Page Two',
             command=lambda: self.__navigate(),
         ).pack()
 
@@ -51,7 +51,7 @@ class PageTwo(tknav.Page):
 
         tk.Button(
             self,
-            text='Navigation to Page One',
+            text='Navigate to Page One',
             command=lambda: self.__navigate(),
         ).pack()
 
