@@ -27,14 +27,18 @@ class Page(Frame):
 
     @property
     def parent(self):
-        """Root frame - responsible for container grid
-        """
+        """Root frame - responsible for container grid"""
         return self.__parent
+
+    @property
+    def root(self):
+        """Instance of Wrapper(Tk)"""
+        return self.__root
 
     @property
     def app_state(self):
         """Global app state"""
-        return self.parent.root.app_state
+        return self.root.app_state
 
     def update_state(self):
         """Do not override
@@ -42,7 +46,7 @@ class Page(Frame):
         -----
 
         Updates the global app state"""
-        self.__root.app_state = self.app_state
+        self.root.app_state = self.app_state
 
     def navigate(self, name):
         """Do not override
@@ -53,7 +57,7 @@ class Page(Frame):
 
         :param name: Name (ID) of the page
         """
-        self.parent.root.show_page(name)
+        self.root.show_page(name)
 
     def page_did_mount(self):
         """Is called when the page is shown"""
