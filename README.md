@@ -81,7 +81,7 @@ if __main__ == '__main__':
 ```python
 class PageOne(tknav.Page):
 
-    def __init__(self, parent: tk.Frame, root: tknav.Nav):
+    def __init__(self, parent):
         ...
 
         tk.Button(
