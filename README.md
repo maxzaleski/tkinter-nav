@@ -156,6 +156,6 @@ class PageTwo(tknav.Page):
 
 ### Example
 
-Is this [example](https://github.com/maxzaleski/tkinter-nav/tree/master/example), we navigated from *page_one* to *page_two* to *page_one* again. The state is printed in page_did_mount() and changed in page_did_unmount().
+Is this [example](https://github.com/maxzaleski/tkinter-nav/blob/master/example/example.py), we navigated from *page_one* to *page_two* to *page_one* again. The state is printed in page_did_mount() and changed in page_did_unmount().
 
 <img src='https://i.imgur.com/RkfIsT1.png' height=200/>
