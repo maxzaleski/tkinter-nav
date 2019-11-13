@@ -15,7 +15,7 @@ pip install tkinter-nav
 
 ```python
 import tkinter as tk
-import tkinternav as tknav
+import tkinter_nav as tknav
 
 
 class PageOne(tknav.Page):
