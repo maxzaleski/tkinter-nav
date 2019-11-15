@@ -50,18 +50,20 @@ class PageThree(tknav.Page):
 class App(tknav.Wrapper):
 
   def __init__(self):
-    # Your pages
     pages = [PageOne, PageTwo]
 
-    tknav.Wrapper.__init__(self, pages)
+    tknav.Wrapper.__init__(
+        self,
+        # Your pages
+        pages=pages,
+        # Set inital state, not required
+        start_state={'foo': 'bar'}
+    )
 
     # Use as any Tk instance
     # tknav.Wrapper extends tk.Tk
     self.geometry('200x200')
     self.title('My Nav App')
-
-    # Set inital state, not required
-    self.app_state = {'foo': 'bar'}
 
     # Show page
     self.show_page('page_one')

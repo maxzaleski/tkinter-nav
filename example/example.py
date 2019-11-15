@@ -4,9 +4,12 @@ import tkinter_nav as tknav
 class App(tknav.Wrapper):
 
     def __init__(self):
-        tknav.Wrapper.__init__(self, [PageOne, PageTwo])
+        tknav.Wrapper.__init__(
+            self,
+            pages=[PageOne, PageTwo],
+            start_state={'previous_page': None}
+        )
         self.geometry('300x300')
-        self.app_state = {'previous_page': None}
         self.show_page('page_one')
 
 

@@ -7,10 +7,10 @@ from .page_container import Container
 class Wrapper(Tk):
     """Tkinter-nav entry class"""
 
-    def __init__(self, pages):
+    def __init__(self, pages, start_state=None):
         Tk.__init__(self)
 
-        self.app_state = {}
+        self.app_state = start_state or {}
 
         self.__pages = {}
         self.__current_page = None
