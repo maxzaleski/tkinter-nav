@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='tkinter-nav',
-    version='0.0.4',
+    version='0.0.5',
     author='Maximilien Zaleski',
     author_email='maximilienzaleski@yahoo.com',
     description='Lightweight navigation wrapper for Tkinter',
