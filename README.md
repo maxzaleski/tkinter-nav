@@ -1,6 +1,6 @@
 <div align=center>
   <h1>Tkinter-nav</h1>
-  <h3>Lightweight navigation wrapper for Tkinter.</h3>
+  <h3>Navigation wrapper for Tkinter.</h3>
 </div>
 
 ## Install
